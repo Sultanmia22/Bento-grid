@@ -1,186 +1,214 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
- margin: 50px 0;
+    margin: 50px 0;
+    background-color: #F5F5F5;
 }
-.section1{grid-area: section1;}
-.section2{grid-area: section2;}
-.section3{grid-area: section3;}
-.section4{grid-area: section4;}
-.section5{grid-area: section5;}
-.section6{grid-area: section6;}
-.section7{grid-area: section7;}
-.section8{grid-area: section8;}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
+.section4 {
+    grid-area: section4;
+}
+
+.section5 {
+    grid-area: section5;
+}
+
+.section6 {
+    grid-area: section6;
+}
+
+.section7 {
+    grid-area: section7;
+}
+
+.section8 {
+    grid-area: section8;
+}
 
 .grid-container {
     display: grid;
     width: 1000px;
     grid-auto-rows: 80px;
-    gap: 20px;
-    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    grid-template-areas:                      
-    'section1 section2 section2 section3'
-     'section1 section2 section2 section3'
-     'section1 section2 section2 section3'
-     'section1 section2 section2 section3'
-     'section1 section5 section6 section3'
-     'section4 section5 section6 section3'
-     'section4 section5 section6 section3'
-     'section4 section7 section8 section8'
-     'section4 section7 section8 section8'
-     'section4 section7 section8 section8'
-     ;
-     background-color: #F5F5F5;
-     margin: 0 auto;
-   }
-     img{
-        width: 100%;
-     }
-     
-    
-     
-    /* section1 */
-  .section1{
-    background-color: hsl(31, 66%, 93%);
-    padding: 30px;
-    
+    grid-template-areas:
+        'section1 section2 section2 section3'
+        'section1 section2 section2 section3'
+        'section1 section2 section2 section3'
+        'section1 section2 section2 section3'
+        'section1 section5 section6 section3'
+        'section4 section5 section6 section3'
+        'section4 section5 section6 section3'
+        'section4 section7 section8 section8'
+        'section4 section7 section8 section8'
+        'section4 section7 section8 section8'
+    ;
+   
+    margin: 0 auto;
+   
 }
-.span1{
-    color: hsl(256, 67%, 59%);
-}
-.section1 > h2{
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-.section1 > img{
+
+img {
     width: 100%;
 }
 
-    /* section-2*/
-.section2{
- background-color: hsl(256, 67%, 59%);
- padding: 50px;
- text-align: center;
- color: white;
-}
-.section2 > h2{
-    font-size: 3rem;
-    
+
+
+/* section1 */
+.section1 {
+    background-color: hsl(31, 66%, 93%);
+    padding: 30px;
+    border-radius: 10px;
 }
 
-    /* Section3 */
-.section3{
- background-color: #DCD1FC;
- padding: 35px;
- 
+.span1 {
+    color: hsl(256, 67%, 59%);
 }
-.section3 > h2{
+
+.section1>h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.section1>img {
+    width: 100%;
+}
+
+/* section-2*/
+.section2 {
+    background-color: hsl(256, 67%, 59%);
+    padding: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.section2>h2 {
+    font-size: 3rem;
+
+}
+
+/* Section3 */
+.section3 {
+    background-color: #DCD1FC;
+    padding: 35px;
+    border-radius: 10px;
+
+}
+
+.section3>h2 {
     margin: 20px 0 25px 0;
 }
-.section3 > img{
+
+.section3>img {
     margin-bottom: 30px;
     height: 250px;
 }
 
 
 
-    /* Section4 */
-.section4{
- background-color: #FFCC69;
- padding: 10px 20px;
- font-size: 1.5rem;
- line-height: 35px;
+/* Section4 */
+.section4 {
+    background-color: #FFCC69;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    line-height: 35px;
+    border-radius: 10px;
 }
-.section4 > h2{
+
+.section4>h2 {
     margin-top: 30px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
-    /* Section=5 */
-.section5{
- background-color: #FFFFFF;
- overflow: hidden;
- 
+/* Section=5 */
+.section5 {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 10px;
+
 }
-.section5 > h2{
+
+.section5>h2 {
     line-height: 2rem;
-    
-    margin:30px 25px 30px 25px;
-}
-.section5 > img{
- 
- margin-top: 40px;
- background-color:#FFFFFF;
- margin-left:30px ;
 
+    margin: 30px 25px 30px 25px;
 }
 
+.section5>img {
 
-    /* Section-6 */
-.section6{
- background-color: #FFCC69;
- padding: 25px;
- overflow: hidden;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    margin-left: 30px;
 
 }
-.section6 > h2{
+
+
+/* Section-6 */
+.section6 {
+    background-color: #FFCC69;
+    padding: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.section6>h2 {
     margin-bottom: 20px;
 }
 
-    /* Section=7 */
-.section7{
- background-color: #FFFFFF;
- padding: 30px;
+/* Section=7 */
+.section7 {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
 }
-.span-2{
+
+.span-2 {
     font-size: 3rem;
 }
-.section7 > p{
+
+.section7>p {
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 30px;
-    
+
 }
 
 
-    /* Section-8 */
-.section8{
- background-color: #7651DC;
+/* Section-8 */
+.section8 {
+    background-color: #7651DC;
+    border-radius: 10px;
 }
-.section8{
+
+.section8 {
     display: flex;
-    padding:20px;
+    padding: 20px;
     justify-content: center;
-    
-   
-} 
- 
+}
 
- .section8 > h2{
+
+.section8>h2 {
     font-size: 1.6rem;
     margin-top: 70px;
     color: white;
-} 
-
-
- 
-
-    
-   
-  
-
-
-   
-
-   
-    
-   
-
-    
-    
+}
